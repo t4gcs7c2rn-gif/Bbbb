@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RABBIT | Verification</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#080607;color:#f5f5f5;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;padding:20px}
+.card{width:100%;max-width:430px;padding:35px 25px;text-align:center;border-radius:28px;background:linear-gradient(180deg,#170b0e,#0d0809);border:1px solid #541b29;box-shadow:0 0 35px #8b102533}
+.discord{width:100px;height:100px;border-radius:28px;background:#5865f2;display:flex;justify-content:center;align-items:center;margin:15px auto 25px;font-size:48px;box-shadow:0 0 25px #5865f255}
+h1{font-size:34px;margin:10px 0;letter-spacing:2px}.subtitle{color:#999;font-size:14px;letter-spacing:2px}
+.status{display:inline-block;margin-top:25px;padding:12px 25px;border:1px solid #a52a44;border-radius:50px;color:#ff526f;background:#260c13}
+.circle{width:180px;height:180px;margin:30px auto;border-radius:50%;border:3px dashed #7c2437;display:flex;align-items:center;justify-content:center;box-shadow:0 0 25px #991c3733}
+.circle span{font-size:65px;color:#ff365b}h2{font-size:25px}.description{color:#aaa;line-height:1.8;font-size:15px}
+button{width:100%;padding:18px;border:none;border-radius:14px;background:linear-gradient(90deg,#a90e30,#e7274d);color:white;font-size:17px;font-weight:bold;margin-top:25px;cursor:pointer}
+button:active{transform:scale(.98)}.footer{color:#777;margin-top:30px;font-size:12px}
+.notice{display:none;color:#ffb2c0;margin-top:16px;font-size:13px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="discord" aria-label="Discord">◉</div>
+  <h1>RABBIT</h1>
+  <div class="subtitle">SECURE VERIFICATION SYSTEM</div>
+  <div class="status">● VERIFICATION REQUIRED</div>
+  <div class="circle"><span>✓</span></div>
+  <h2>ยืนยันตัวตน</h2>
+  <p class="description">กรุณาเชื่อมบัญชี Discord เพื่อยืนยันสมาชิก<br>และรับยศภายในเซิร์ฟเวอร์</p>
+  <button onclick="showNotice()">ยืนยันตัวตนผ่าน Discord</button>
+  <p class="notice" id="notice">หน้านี้เป็นตัวอย่าง Frontend ยังไม่ได้เชื่อม OAuth2 หรือบอท Discord<br>ต้องตั้งค่าระบบฝั่งเซิร์ฟเวอร์ก่อนจึงจะรับยศได้จริง</p>
+  <div class="footer">© 2026 RABBIT 🐰</div>
+</div>
+<script>
+function showNotice(){document.getElementById('notice').style.display='block';}
+</script>
+</body>
+</html>
